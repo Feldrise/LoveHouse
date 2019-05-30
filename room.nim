@@ -11,11 +11,15 @@ method name*(this: Room): string =
 method descrition*(this: Room): string =
     "C'est une piece."
 
+method interract*(this: Room): void = 
+    echo "Il n'y a rien a faire dans cette piece"
+
 method enter*(this: Room): void =
     echo "Vous etes dans ", this.name
     echo "**********"
     echo this.descrition
-    
+    echo "**********"
+
     if len(this.animals) > 0:
         echo "Il y a un ou plusieurs animaux dans cette piece..."
         echo ""
@@ -23,11 +27,12 @@ method enter*(this: Room): void =
         for animal in this.animals:
             echo animal.noise
             animal.interract
-
-    echo "**********"
+        
+        echo ""
 
 method moveToRoom*(this: Room): int = 
     this.enter()
+    this.interract()
 
     var roomsName: seq[string]
 
