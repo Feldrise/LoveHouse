@@ -8,7 +8,7 @@ method name*(this: EntryRoom): string =
     "l'entree"
 
 method descrition*(this: EntryRoom): string =
-    "Vous vous trouvez a l'entree de la maison. Vous avez vu sur une grande cuisine et un salon aussi grand que lumineux. Je vous invite a retirer vos chaussure et poser vos vetements sur les portes-mantaux a votre droite."
+    "Vous vous trouvez a l'entree de la maison. Vous avez vu sur une grande cuisine et un salon aussi grand que lumineux. Je vous invite a retirer vos chaussure et poser vos vetements sur les portes-manteau a votre droite."
 
 method interract*(this: EntryRoom): void = 
     if this.clothPosed == false:
@@ -23,6 +23,6 @@ method interract*(this: EntryRoom): void =
         
         echo ""
     else:
-        echo "Vous avez deja deposer vos vetements"
+        echo "Vous avez deja depose vos vetements"
         echo ""
 
