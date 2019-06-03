@@ -18,4 +18,4 @@ while true:
     echo ""
     echo ""
 
-echo "Tu as ete teleporter dans le monde reel. Au revoir !"
+echo "Tu as ete teleporte dans le monde reel. Au revoir !"
