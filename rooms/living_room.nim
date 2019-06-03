@@ -8,7 +8,7 @@ method name*(this: LivingRoom): string =
     "le salon"
 
 method descrition*(this: LivingRoom): string =
-    "Vous etes dans le salon. Cette grande piece est tres lumineuse de jour. Assez sobre, il y a le canape, la tele, quelques jeux pour les chats ainsi qu'un coussins. Vous avez aussi une grande table et vue sur la cuisine ouverte."
+    "Vous etes dans le salon. Cette grande piece est tres lumineuse de jour. Assez sobre, il y a le canape, la tele, quelques jeux pour les chats ainsi qu'un coussin. Vous avez aussi une grande table et vue sur la cuisine ouverte."
 
 method stayInSofa(this: LivingRoom): void = 
     echo "Que voulez vous faire dans le canape ?"
